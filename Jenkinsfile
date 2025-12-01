@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout from GitHub') {
             steps {
-                git branch: 'main', url: 'https://github.com/USERNAME/REPO_NAME.git'
+                git branch: 'main', url: 'https://github.com/Aviixp/Static-website.git'
             }
         }
 
