@@ -11,13 +11,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t static-site .'
+                bat 'docker build -t static-site:101 .'
             }
         }
 
         stage('Run Container') {
             steps {
-                bat 'docker run -d -p 80:80 --name static-site static-site'
+                bat 'docker run -d -p 3690:80 --name s9 static-site'
             }
         }
     }
